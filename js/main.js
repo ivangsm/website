@@ -1,9 +1,8 @@
 function loadImage(id, targetId) {
-	// console.log(id);
-	var el = document.getElementById(id);
-	var targetEl = targetId ? document.getElementById(targetId) : el;
-	var imageToLoad;
-
+	const el = document.getElementById(id);
+	const targetEl = targetId ? document.getElementById(targetId) : el;
+	let imageToLoad;
+	
 	if (el.dataset.image) {
 		imageToLoad = el.dataset.image;
 	} else if (typeof el.currentSrc === 'undefined') {
@@ -16,13 +15,12 @@ function loadImage(id, targetId) {
 		var img = new Image();
 		img.src = imageToLoad;
 		img.onload = function() {
-			console.log(img.src);
 			targetEl.classList.add('is-loaded');
 		};
 	}
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-	loadImage('pictureImage', 'picture');
-	loadImage('wallpaper');
+	window.onload = loadImage('pictureImage', 'picture');
+	window.onload = loadImage('wallpaper');
 });
