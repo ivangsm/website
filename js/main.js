@@ -1,26 +1,21 @@
-function loadImage(id, targetId) {
-	const el = document.getElementById(id);
-	const targetEl = targetId ? document.getElementById(targetId) : el;
-	let imageToLoad;
-	
-	if (el.dataset.image) {
-		imageToLoad = el.dataset.image;
-	} else if (typeof el.currentSrc === 'undefined') {
-		imageToLoad = el.src;
-	} else {
-		imageToLoad = el.currentSrc;
-	}
-
+const loadImage = (id, targetId) => {
+	const elt = document.querySelector(`#${id}`)
+	const targetElt = targetId ? document.querySelector(`#${targetId}`) : elt
+  
+	const imageToLoad = elt.dataset.image
+	  ? elt.dataset.image
+	  : typeof elt.currentSrc === 'undefined'
+		? elt.src
+		: elt.currentSrc
+  
 	if (imageToLoad) {
-		var img = new Image();
-		img.src = imageToLoad;
-		img.onload = function() {
-			targetEl.classList.add('is-loaded');
-		};
+	  const img = new window.Image()
+	  img.src = imageToLoad
+	  img.onload = _ => targetElt.classList.add('is-loaded')
 	}
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-	loadImage('pictureImage', 'picture');
-	loadImage('wallpaper');
-});
+  }
+  
+  document.addEventListener('DOMContentLoaded', _ => {
+	loadImage('wallpaper')
+	loadImage('pictureImage', 'picture')
+  })
