@@ -21,6 +21,6 @@ function loadImage(id, targetId) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-	window.onload = loadImage('pictureImage', 'picture');
-	window.onload = loadImage('wallpaper');
+	loadImage('pictureImage', 'picture');
+	loadImage('wallpaper');
 });
