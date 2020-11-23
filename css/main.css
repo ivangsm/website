@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Noto Color Emoji';
+  src: url(https://gitcdn.xyz/repo/googlefonts/noto-emoji/master/fonts/NotoColorEmoji.ttf);
+}
+
+.emoji {
+  font-family: 'Noto Color Emoji';
+}
+
 html {
 	background-color: #5FCCFB;
 	background-image: linear-gradient(to left bottom, #3642f1, #355af4, #3f6ef5, #5181f3, #6692ef, #5fa2f4, #5fb1f7, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
