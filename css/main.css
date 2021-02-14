@@ -1,12 +1,12 @@
-@font-face {
+/* @font-face {
   font-family: 'Noto Color Emoji';
   src: url(https://gitcdn.xyz/repo/googlefonts/noto-emoji/master/fonts/NotoColorEmoji.ttf);
   font-display: swap;
-}
+} */
 
-.emoji {
+/* .emoji {
   font-family: 'Noto Color Emoji';
-}
+} */
 
 html {
 	background-color: #5FCCFB;
