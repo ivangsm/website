@@ -11,7 +11,7 @@
 html {
 	background-color: #5FCCFB;
 	background-image: linear-gradient(to left bottom, #3642f1, #355af4, #3f6ef5, #5181f3, #6692ef, #5fa2f4, #5fb1f7, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-	color: #fff;
+	color: #244459;
 	font-family: "Quicksand", sans-serif;
 	font-size: 16px;
 	-moz-osx-font-smoothing: grayscale;
@@ -123,7 +123,7 @@ a {
 	background-color: #fff;
 	border-radius: 290486px;
 	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-	color: #5FCCFB;
+	color: #244459;
 	display: inline-block;
 	font-size: 0.875rem;
 	line-height: 1;
@@ -147,7 +147,7 @@ a {
 }
 
 .job {
-	color: #ffe479;
+	color: #841F03;
 	font-size: 0.75rem;
 }
 
@@ -162,7 +162,7 @@ a {
 }
 
 .hr {
-	background-color: #ff470f;
+	background-color: #ffe479;
 	border: none;
 	content: "";
 	height: 1px;
