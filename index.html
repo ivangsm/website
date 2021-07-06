@@ -1,86 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Iván Salazar - Developer</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon-16x16.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      defer
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      defer
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet preload"
+      type="text/css"
+      href="css/minireset.min.css"
+      as="style"
+    />
+    <link
+      rel="stylesheet preload"
+      type="text/css"
+      href="css/main.css"
+      as="style"
+    />
+    <link
+      rel="stylesheet preload"
+      type="text/css"
+      href="css/animations.css"
+      as="style"
+    />
+    <script defer src="js/main.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/brands.min.js"
+      integrity="sha512-vefaKmSAX3XohXhN50vLfnK12TPIO+4uRpHjXVkX726CqbicEiAQGRzsMTE+EpLkBk4noUcUYu6AQ5af2vfRLA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/fontawesome.min.js"
+      integrity="sha512-KCwrxBJebca0PPOaHELfqGtqkUlFUCuqCnmtydvBSTnJrBirJ55hRG5xcP4R9Rdx9Fz9IF3Yw6Rx40uhuAHR8Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Iván Salazar - Developer</title>
-	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link defer href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-	<link defer href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-	<link rel="stylesheet preload" type="text/css" href="css/minireset.min.css" as="style">
-	<link rel="stylesheet preload" type="text/css" href="css/main.css" as="style">
-	<link rel="stylesheet preload" type="text/css" href="css/animations.css" as="style">
-	<script defer src="js/main.js"></script>
-	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/brands.min.js" integrity="sha512-vefaKmSAX3XohXhN50vLfnK12TPIO+4uRpHjXVkX726CqbicEiAQGRzsMTE+EpLkBk4noUcUYu6AQ5af2vfRLA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/fontawesome.min.js" integrity="sha512-KCwrxBJebca0PPOaHELfqGtqkUlFUCuqCnmtydvBSTnJrBirJ55hRG5xcP4R9Rdx9Fz9IF3Yw6Rx40uhuAHR8Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</head>
+  <body>
+    <div class="wallpaper" id="wallpaper" data-image="images/clouds.webp"></div>
 
-<body>
-	<div class="wallpaper" id="wallpaper" data-image="images/clouds.webp"></div>
+    <div class="content">
+      <aside class="side">
+        <figure class="picture" id="picture">
+          <div class="picture-shadow"></div>
+          <img
+            id="pictureImage"
+            class="picture-image"
+            src="images/ivan.webp"
+            alt="Portrait of Iván Salazar"
+            width="320"
+            height="320"
+          />
+        </figure>
+      </aside>
 
-	<div class="content">
-
-		<aside class="side">
-			<figure class="picture" id="picture">
-				<div class="picture-shadow"></div>
-				<img id="pictureImage" class="picture-image" src="images/ivan.webp" alt="Portrait of Iván Salazar"
-					width="320" height="320">
-			</figure>
-		</aside>
-
-		<main class="about">
-			<h1 class="name">
-				Hi, I'm Iván Salazar
-			</h1>
-			<p class="job">
-				Developer
-			</p>
-			<hr class="hr">
-			<div class="description">
-				<p>
-					I spend my time learning and
-					writing code to make great
-					things with ☕ and a lot of ❤️
-				</p>
-			</div>
-			<div class="contact" id="get-in-touch">
-				<a class="button" href="mailto:me@ivansalazar.dev" aria-label="Mail me">
-					Get in touch
-				</a>
-			</div>
-			<ul class="social">
-				<li>
-					<a href="https://twitter.com/ivangsm_" aria-label="Go to my twitter">
-						<i class="fab fa-twitter"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://github.com/ivangsm" aria-label="Go to my GitHub">
-						<i class="fab fa-github-alt"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://gitlab.com/ivangsm" aria-label="Go to my GitLab">
-						<i class="fab fa-gitlab"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://keybase.io/ivang" aria-label="Go to my Keybase">
-						<i class="fab fa-keybase"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://blog.ivansalazar.dev" aria-label="Go to my Dev Blog">
-						<i class="fab fa-blogger-b"></i>
-					</a>
-				</li>
-			</ul>
-		</main>
-
-	</div>
-</body>
-
+      <main class="about">
+        <h1 class="name">Hi, I'm Iván Salazar</h1>
+        <p class="job">Developer</p>
+        <hr class="hr" />
+        <div class="description">
+          <p>
+            I spend my time learning and writing code to make great things with
+            ☕ and a lot of ❤️
+          </p>
+        </div>
+        <div class="contact" id="get-in-touch">
+          <a
+            class="button"
+            href="mailto:me@ivansalazar.dev"
+            aria-label="Mail me"
+          >
+            Get in touch
+          </a>
+        </div>
+        <ul class="social">
+          <li>
+            <a
+              href="https://twitter.com/ivangsm_"
+              aria-label="Go to my twitter"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ivangsm" aria-label="Go to my GitHub">
+              <i class="fab fa-github-alt"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://gitlab.com/ivangsm" aria-label="Go to my GitLab">
+              <i class="fab fa-gitlab"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://keybase.io/ivang" aria-label="Go to my Keybase">
+              <i class="fab fa-keybase"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://blog.ivansalazar.dev"
+              aria-label="Go to my Dev Blog"
+            >
+              <i class="fab fa-blogger-b"></i>
+            </a>
+          </li>
+        </ul>
+      </main>
+    </div>
+  </body>
 </html>
