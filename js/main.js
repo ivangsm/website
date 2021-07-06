@@ -13,11 +13,11 @@ const loadImage = (id, targetId) => {
 	if (imageToLoad) {
 		const img = new window.Image()
 		img.src = imageToLoad
-		img.onload = _ => targetElt.classList.add('is-loaded')
+		img.onload = () => targetElt.classList.add('is-loaded')
 	}
 }
 
-document.addEventListener('DOMContentLoaded', _ => {
+document.addEventListener('DOMContentLoaded', () => {
 	loadImage('pictureImage', 'picture')
 	loadImage('wallpaper')
 
