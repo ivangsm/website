@@ -1,8 +1,10 @@
+"use strict";
+
 function loadImage(id, targetId) {
 	// console.log(id);
-	var el = document.getElementById(id);
-	var targetEl = targetId ? document.getElementById(targetId) : el;
-	var imageToLoad;
+	const el = document.getElementById(id);
+	const targetEl = targetId ? document.getElementById(targetId) : el;
+	let imageToLoad;
 
 	if (el.dataset.image) {
 		imageToLoad = el.dataset.image;
@@ -13,7 +15,7 @@ function loadImage(id, targetId) {
 	}
 
 	if (imageToLoad) {
-		var img = new Image();
+		const img = new Image();
 		img.src = imageToLoad;
 		img.onload = function () {
 			targetEl.classList.add('is-loaded');
