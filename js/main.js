@@ -15,14 +15,22 @@ function loadImage(id, targetId) {
 	if (imageToLoad) {
 		var img = new Image();
 		img.src = imageToLoad;
-		img.onload = function() {
-			console.log(img.src);
+		img.onload = function () {
 			targetEl.classList.add('is-loaded');
 		};
 	}
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
+    loadImage('pictureImage', 'picture');
 	loadImage('wallpaper');
-	loadImage('pictureImage', 'picture');
+
+	const firstTime = localStorage.getItem('firstTime?');
+	const isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+
+
+	if (firstTime === null && !isFirefox) {
+		localStorage.setItem('firstTime?', 'no');
+		location.reload();
+	}
 });
