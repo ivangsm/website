@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	if (firstTime === null && !isFirefox) {
-		localStorage.setItem('firstTime?', 'no');
+		localStorage.setItem('firstTime?', 0);
 		location.reload();
 	}
 });
