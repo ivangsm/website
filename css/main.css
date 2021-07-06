@@ -130,6 +130,9 @@ a {
 	padding: 1.25em 2em;
 	text-shadow: none;
 	transition-property: box-shadow, transform;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
 	user-select: none;
 	vertical-align: top;
 	white-space: nowrap;
