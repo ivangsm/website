@@ -21,11 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
 	loadImage('pictureImage', 'picture')
 	loadImage('wallpaper')
 
-	const firstTime = localStorage.getItem('firstTime?');
-	const isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+	// const firstTime = localStorage.getItem('firstTime?');
+	// const isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 
-	if (firstTime === null && !isFirefox) {
-		localStorage.setItem('firstTime?', 0);
-		location.reload();
-	}
+	// if (firstTime === null && !isFirefox) {
+	// 	localStorage.setItem('firstTime?', 0);
+	// 	location.reload();
+	// }
 });
